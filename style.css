@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 12px 24px;
+    background: #1f4e79;
+}
+
+nav a {
+    color: #cfe0f1;
+    text-decoration: none;
+}
+
+nav a.aktif,
+nav a:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.kartu {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dde3e8;
+}
+
+table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+th {
+    background: #f0f3f6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 14px;
+    font-size: 14px;
+    color: #1f4e79;
+    background: #fff;
+    border: 1px solid #1f4e79;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn.utama {
+    color: #fff;
+    background: #1f4e79;
+}
+
+.btn.bahaya {
+    color: #fff;
+    background: #8e2a2a;
+    border-color: #8e2a2a;
+}
+
+.btn.kecil {
+    padding: 4px 9px;
+    font-size: 13px;
+}
+
+.baris {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+label {
+    display: block;
+    margin: 12px 0 4px;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=date],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 9px;
+    font: inherit;
+    border: 1px solid #bbb;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+form.inline {
+    display: inline;
+}
+
+.cari {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0;
+}
+
+.cari input,
+.cari select {
+    padding: 8px;
+    border: 1px solid #bbb;
+}
+
+.cari input {
+    flex: 1;
+    min-width: 160px;
+}
+
+.galat {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #8e2a2a;
+}
+
+.pesan {
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    border-left: 4px solid;
+}
+
+.pesan.sukses {
+    background: #e8f5ec;
+    border-color: #2e7d4f;
+}
+
+.pesan.error {
+    color: #8e2a2a;
+    background: #f6eaea;
+    border-color: #8e2a2a;
+}
+
+.pesan.info {
+    background: #eaf1f8;
+    border-color: #1f4e79;
+}
+
+.kosong {
+    margin-top: 12px;
+    padding: 24px;
+    border: 1px dashed #bbb;
+}
+
+.ringkas {
+    display: flex;
+    gap: 40px;
+    margin: 14px 0;
+    padding: 12px 0;
+    border-top: 1px solid #e5e9ed;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.ringkas b {
+    display: block;
+    font-size: 24px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 8px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0;
+}
